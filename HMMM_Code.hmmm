@@ -1,0 +1,15 @@
+0 setn r1 -10 #Gravity (m/s^2)
+1 read r2 #FallingTime (s)
+2 setn r3 2 #Constant
+3 read r5 #İnitialPosition (m)
+4 read r4 #İnitialVelocity (m/s)
+5 jumpn 6 #FORMULA
+6 mul r1 r1 r2 #
+7 mul r1 r1 r2 #
+8 div r1 r1 r3 #
+9 mul r4 r4 r2 #
+10 add r1 r1 r4 #
+11 add r1 r1 r5 #
+12 write r1 #FinalPosition (m)
+13 halt #
+
